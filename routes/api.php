@@ -21,3 +21,6 @@ Route::resource('signatures', 'Api\SignatureController')
     ->only(['index', 'store', 'show']);
 
 Route::put('signatures/{signature}/report', 'Api\ReportSignature@update');
+
+Route::resource('test-title', 'Api\TestTableController')
+    ->only(['index', 'store', 'show']);
